@@ -128,7 +128,7 @@ class ViewController: UIViewController {
         switch playType {
         case "normal":
             playType = "repeatAll"
-            playTypeButton.backgroundColor = UIColor.orange
+            playTypeButton.backgroundColor = UIColor.systemOrange
             playTypeButton.tintColor = UIColor.white
         case "repeatAll":
             playType = "repeatOne"
@@ -137,7 +137,7 @@ class ViewController: UIViewController {
             playType = "normal"
             playTypeButton.setImage(UIImage(systemName: "repeat"), for: .normal)
             playTypeButton.backgroundColor = UIColor.clear
-            playTypeButton.tintColor = UIColor.orange
+            playTypeButton.tintColor = UIColor.systemOrange
         default:
             break
         }
@@ -150,10 +150,10 @@ class ViewController: UIViewController {
             })!
             playList = songs
             shuffleButton.backgroundColor = UIColor.clear
-            shuffleButton.tintColor = UIColor.orange
+            shuffleButton.tintColor = UIColor.systemOrange
         } else {
             playList = songs.shuffled()
-            shuffleButton.backgroundColor = UIColor.orange
+            shuffleButton.backgroundColor = UIColor.systemOrange
             shuffleButton.tintColor = UIColor.white
             index = playList.firstIndex(where: { (song) -> Bool in
                 (song.name + song.singer) == (self.songs[index].name + self.songs[index].singer)
