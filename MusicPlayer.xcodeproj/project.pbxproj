@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDAF033323C512C100E9A4AF /* 可惜沒如果-林俊傑.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CDAF033223C512C100E9A4AF /* 可惜沒如果-林俊傑.mp4 */; };
+		CDAF033523C5170C00E9A4AF /* 那些你很冒險的夢-林俊傑.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CDAF033423C5170C00E9A4AF /* 那些你很冒險的夢-林俊傑.mp4 */; };
+		CDAF033723C517DE00E9A4AF /* 不為誰而作的歌-林俊傑.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CDAF033623C517DE00E9A4AF /* 不為誰而作的歌-林俊傑.mp4 */; };
+		CDAF033923C519A700E9A4AF /* 給我一個理由忘記-A-Lin.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CDAF033823C519A700E9A4AF /* 給我一個理由忘記-A-Lin.mp4 */; };
 		CDCE824F23C1D82F00CBE65C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE824E23C1D82F00CBE65C /* AppDelegate.swift */; };
 		CDCE825123C1D82F00CBE65C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE825023C1D82F00CBE65C /* SceneDelegate.swift */; };
 		CDCE825323C1D82F00CBE65C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE825223C1D82F00CBE65C /* ViewController.swift */; };
@@ -15,6 +19,8 @@
 		CDCE825B23C1D83200CBE65C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCE825923C1D83200CBE65C /* LaunchScreen.storyboard */; };
 		CDCE826623C1D83200CBE65C /* MusicPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE826523C1D83200CBE65C /* MusicPlayerTests.swift */; };
 		CDCE827123C1D83200CBE65C /* MusicPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE827023C1D83200CBE65C /* MusicPlayerUITests.swift */; };
+		CDCE828123C1DE0700CBE65C /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE828023C1DE0700CBE65C /* Song.swift */; };
+		CDCE828523C2A02400CBE65C /* 修煉愛情-林俊傑.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CDCE828423C2A02400CBE65C /* 修煉愛情-林俊傑.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CDAF033223C512C100E9A4AF /* 可惜沒如果-林俊傑.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "可惜沒如果-林俊傑.mp4"; sourceTree = "<group>"; };
+		CDAF033423C5170C00E9A4AF /* 那些你很冒險的夢-林俊傑.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "那些你很冒險的夢-林俊傑.mp4"; sourceTree = "<group>"; };
+		CDAF033623C517DE00E9A4AF /* 不為誰而作的歌-林俊傑.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "不為誰而作的歌-林俊傑.mp4"; sourceTree = "<group>"; };
+		CDAF033823C519A700E9A4AF /* 給我一個理由忘記-A-Lin.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "給我一個理由忘記-A-Lin.mp4"; sourceTree = "<group>"; };
 		CDCE824B23C1D82F00CBE65C /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCE824E23C1D82F00CBE65C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDCE825023C1D82F00CBE65C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		CDCE826C23C1D83200CBE65C /* MusicPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCE827023C1D83200CBE65C /* MusicPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerUITests.swift; sourceTree = "<group>"; };
 		CDCE827223C1D83200CBE65C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDCE828023C1DE0700CBE65C /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		CDCE828423C2A02400CBE65C /* 修煉愛情-林俊傑.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "修煉愛情-林俊傑.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,11 @@
 		CDCE824D23C1D82F00CBE65C /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				CDCE828423C2A02400CBE65C /* 修煉愛情-林俊傑.mp4 */,
+				CDAF033223C512C100E9A4AF /* 可惜沒如果-林俊傑.mp4 */,
+				CDAF033423C5170C00E9A4AF /* 那些你很冒險的夢-林俊傑.mp4 */,
+				CDAF033623C517DE00E9A4AF /* 不為誰而作的歌-林俊傑.mp4 */,
+				CDAF033823C519A700E9A4AF /* 給我一個理由忘記-A-Lin.mp4 */,
 				CDCE824E23C1D82F00CBE65C /* AppDelegate.swift */,
 				CDCE825023C1D82F00CBE65C /* SceneDelegate.swift */,
 				CDCE825223C1D82F00CBE65C /* ViewController.swift */,
@@ -106,6 +123,7 @@
 				CDCE825723C1D83200CBE65C /* Assets.xcassets */,
 				CDCE825923C1D83200CBE65C /* LaunchScreen.storyboard */,
 				CDCE825C23C1D83200CBE65C /* Info.plist */,
+				CDCE828023C1DE0700CBE65C /* Song.swift */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
@@ -232,8 +250,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDAF033923C519A700E9A4AF /* 給我一個理由忘記-A-Lin.mp4 in Resources */,
+				CDAF033723C517DE00E9A4AF /* 不為誰而作的歌-林俊傑.mp4 in Resources */,
 				CDCE825B23C1D83200CBE65C /* LaunchScreen.storyboard in Resources */,
+				CDCE828523C2A02400CBE65C /* 修煉愛情-林俊傑.mp4 in Resources */,
+				CDAF033323C512C100E9A4AF /* 可惜沒如果-林俊傑.mp4 in Resources */,
 				CDCE825823C1D83200CBE65C /* Assets.xcassets in Resources */,
+				CDAF033523C5170C00E9A4AF /* 那些你很冒險的夢-林俊傑.mp4 in Resources */,
 				CDCE825623C1D82F00CBE65C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDCE828123C1DE0700CBE65C /* Song.swift in Sources */,
 				CDCE825323C1D82F00CBE65C /* ViewController.swift in Sources */,
 				CDCE824F23C1D82F00CBE65C /* AppDelegate.swift in Sources */,
 				CDCE825123C1D82F00CBE65C /* SceneDelegate.swift in Sources */,
@@ -441,10 +465,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tw.kffatkalo.MusicPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.kffatkalo.Qna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,10 +483,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tw.kffatkalo.MusicPlayer;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.kffatkalo.Qna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
