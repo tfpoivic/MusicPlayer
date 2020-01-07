@@ -194,7 +194,10 @@ class ViewController: UIViewController {
         currentTimeLabel.text = "0:00"
         remainTimeLabel.text = "-\(formatTime(time: duration))"
         player.replaceCurrentItem(with: playerItem)
-        setupNowPlaying(playerItem: playerItem)
+        nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = playerItem.currentTime().seconds
+        nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = playerItem.asset.duration.seconds
+        nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = player.rate
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = self.nowPlayingInfo
     }
     
     func formatTime(time: Float64) -> String {
@@ -261,15 +264,6 @@ class ViewController: UIViewController {
             self.play()
             return .success
         }
-    }
-    
-    func setupNowPlaying(playerItem: AVPlayerItem) {
-        nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = playerItem.currentTime().seconds
-        nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = playerItem.asset.duration.seconds
-        nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = player.rate
-
-        // Set the metadata
-        MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
     }
 
     func addPeriodicTimeObserver() {
