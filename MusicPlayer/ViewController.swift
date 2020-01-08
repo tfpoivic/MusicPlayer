@@ -269,7 +269,6 @@ class ViewController: UIViewController {
         let timeScale = CMTimeScale(NSEC_PER_SEC)
         let time = CMTime(seconds: 1, preferredTimescale: timeScale)
         if timeObserverToken == nil {
-            print(1)
             timeObserverToken = player.addPeriodicTimeObserver(forInterval: time, queue: .main, using: { (time) in
                 if self.player.currentItem?.status == .readyToPlay, self.player.rate == 1 {
                     let currentTime = CMTimeGetSeconds((self.player.currentTime()))
