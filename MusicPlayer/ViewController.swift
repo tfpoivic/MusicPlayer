@@ -45,7 +45,6 @@ class ViewController: UIViewController {
         view.addSubview(volumeView)
         playList = songs
         prepareSong(index: index)
-        addPeriodicTimeObserver()
         setupRemoteTransportControls()
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: nil, queue: .main) { (_) in
             switch self.playType {
@@ -269,16 +268,19 @@ class ViewController: UIViewController {
     func addPeriodicTimeObserver() {
         let timeScale = CMTimeScale(NSEC_PER_SEC)
         let time = CMTime(seconds: 1, preferredTimescale: timeScale)
-        timeObserverToken = player.addPeriodicTimeObserver(forInterval: time, queue: .main, using: { (time) in
-            if self.player.currentItem?.status == .readyToPlay, self.player.rate == 1 {
-                let currentTime = CMTimeGetSeconds((self.player.currentTime()))
-                self.musicSlider.value = Float(currentTime)
-                self.currentTimeLabel.text = self.formatTime(time: currentTime)
-                self.remainTimeLabel.text = "-\(String(describing: self.formatTime(time: Double((self.musicSlider.maximumValue)) - currentTime)))"
-                self.nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = currentTime
-                MPNowPlayingInfoCenter.default().nowPlayingInfo = self.nowPlayingInfo
-            }
-        })
+        if timeObserverToken == nil {
+            print(1)
+            timeObserverToken = player.addPeriodicTimeObserver(forInterval: time, queue: .main, using: { (time) in
+                if self.player.currentItem?.status == .readyToPlay, self.player.rate == 1 {
+                    let currentTime = CMTimeGetSeconds((self.player.currentTime()))
+                    self.musicSlider.value = Float(currentTime)
+                    self.currentTimeLabel.text = self.formatTime(time: currentTime)
+                    self.remainTimeLabel.text = "-\(String(describing: self.formatTime(time: Double((self.musicSlider.maximumValue)) - currentTime)))"
+                    self.nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = currentTime
+                    MPNowPlayingInfoCenter.default().nowPlayingInfo = self.nowPlayingInfo
+                }
+            })
+        }
     }
     
     func removePeriodicTimeObserver() {
